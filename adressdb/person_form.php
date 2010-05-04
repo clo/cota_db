@@ -173,7 +173,7 @@ if ($GLOBALS[export]){
         $check2 = "checked";
 	}
 	echo "<tr><td>Weihnachtskarte: </td><td><input style='width: 50' type='radio' name=data[Weihnachtskarte] value='1' $check1>&nbsp;ja&nbsp;<input style='width: 50' type='radio' name=data[Weihnachtskarte] value='0' $check2>&nbsp;nein&nbsp;</td></tr>";
-	echo "<tr><td><input type='submit' name='save' value='speichern'></td></tr>";
+	echo "<tr><td><input type='submit' name='save' value='speichern' $g_disabled></td></tr>";
 	echo "<input type='hidden' name='mode' value='data'>";
 	if ($id){
         echo "<input type='hidden' name='update' value='update'>";
@@ -222,7 +222,7 @@ if ($GLOBALS[export]){
 	echo "</tr>\n";
 	echo "</table>\n";
 	echo "<table>\n";
-	echo "<tr><td><input type='submit' name='save' value='speichern'></td></tr>\n";
+	echo "<tr><td><input type='submit' name='save' value='speichern' $g_disabled></td></tr>\n";
 	echo "<input type='hidden' name='mode' value='data'>\n";
 	echo "<input type='hidden' name='geschichte' value='geschichte'>\n";
 	echo "<input type='hidden' name='data[PersonendatenID]' value='".$id."'>\n";

@@ -7,6 +7,7 @@ echo "<title>CUP OF THE ALPS - Adressdatenbank</title>";
 echo "</head>";
 
 echo "<body>";
+include("cfg/config.inc.php");
 include("lib/db.class.php");
 include("lib/html.class.php");
 include("lib/lib.inc.php");
